@@ -13,7 +13,6 @@ Router.events.on('routeChangeComplete',url => {
 });
 
 Router.events.on('routeChangeError',(err,url) => {
-    console.log(err);
     NProgress.done();
 });
 
