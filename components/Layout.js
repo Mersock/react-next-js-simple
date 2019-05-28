@@ -17,7 +17,7 @@ Router.events.on('routeChangeError',(err,url) => {
 });
 
 
-export default (props) => (
+const Layout = (props) => (
     <div className="root">
         <Head>
             <title>React and NextJs Simple</title>
@@ -26,6 +26,7 @@ export default (props) => (
             <Link href="/"><a>Home</a></Link>
             <Link href="/about"><a>About</a></Link>
             <Link href="/hireme"><a>Hireme</a></Link>
+            <Link href="/blog"><a>Blog</a></Link>
         </header>
 
         <h1>{props.title}</h1>
@@ -68,4 +69,6 @@ export default (props) => (
        `}</style>
     </div>
 );
+
+export default Layout;
 
