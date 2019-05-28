@@ -1,0 +1,10 @@
+{
+    "version":2,
+    "name":"react-next-js-simple",
+    "builds":[
+        {
+            "src": "package.json",
+            "use": "@now/static-build"
+        }
+    ]
+}
