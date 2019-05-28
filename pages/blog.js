@@ -1,17 +1,13 @@
+import React from 'react';
 import Layout from '../components/Layout';
-import Link from 'next/link';
-
-
-const PostLink = props => (
-    <li><Link href={`/post?title=${props.title}`}><a>{props.title}</a></Link></li>
-);
+import PostLink from './postlink';
 
 const blog = () => (
     <Layout title="My Blog">
         <ul>
-            <PostLink title="React" />
-            <PostLink title="Angular" />
-            <PostLink title="Vue" />
+            <PostLink slug="react-post" title="React Post" />
+            <PostLink slug="angular-post" title="Angular Post" />
+            <PostLink slug="vue-post" title="Vue Post" />
         </ul>
     </Layout>
 );
